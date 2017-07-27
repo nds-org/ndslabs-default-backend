@@ -24,6 +24,7 @@
         <div class="modal-dialog" role="document" style="margin-top:200px;">
             <div class="modal-content">
                 <!-- Title Pane -->
+                <!--TODO: "close" button will not work here.. see "Back" button below -->
                 <!--<div class="modal-header">
                     <button type="button" class="close" onclick="window.history.back()" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
@@ -39,12 +40,16 @@
                     <small>You will be automatically redirected to your service when it is ready</small>
                 
                 </div>
-                <div class="modal-footer">
+                <!--
+                     FIXME: "Back" button will not work here because we open in a new tab and
+                        href="/" will not work here because we've changed hostnames during navigation
+                -->
+                <!--<div class="modal-footer">
                     <button class="btn btn-info pull-left" onclick="window.history.back()">
                         <i class="fa fa-fw fa-arrow-left"></i>
                         Go Back
                     </button>
-                </div>
+                </div>-->
             </div><!-- /.modal-content -->
         </div><!-- /.modal-dialog -->
     
